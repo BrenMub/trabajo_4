@@ -23,7 +23,7 @@ def calculadora(num1:float, num2:float,operacion):
 
 if __name__ == "__main__":
 
-    opciones=input("Por favor, ingresa la funcion que deseas utilizar: saludo, contador, calculadora" )
+    opciones=input("Por favor, ingresa la funcion que deseas utilizar: saludo, contador, calculadora: " )
     if opciones == "saludo":
         print(saludar())
     elif opciones == "contador":
@@ -31,12 +31,12 @@ if __name__ == "__main__":
             numero = int(input("Ingresa un número entero positivo: "))
             contador_numeros(numero)
         except ValueError:
-            print("Por favor, ingresa un número entero válido.")
+            print("Por favor, ingresa un número entero válido: ")
     elif opciones == "calculadora":
-        numero1 = int(input("Ingresa el numero 1"))
-        numero2 = int(input("Ingresa el numero 2"))
-        operacion = input("Ingresa la operacion a utilizar en la calculadora (+,-,/,*)")
-        calculadora(numero1, numero2, operacion)
+        numero1 = int(input("Ingresa el numero 1: "))
+        numero2 = int(input("Ingresa el numero 2: "))
+        operacion = input("Ingresa la operacion a utilizar en la calculadora (+,-,/,*): ")
+        print(calculadora(numero1, numero2, operacion))
 
 
 
